@@ -1,0 +1,26 @@
+.inputPolje {
+    padding: 20px;
+    display: flex;
+    width: 400px;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+
+.inputPolje input {
+    padding: 15px;
+    border: 1px solid #cecece;
+    border-radius: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+}

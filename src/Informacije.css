@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+}
+
+.pasus {
+    font-size: 18px;
+    font-weight: 600;
+    color: #140241;
+    padding: 30px;
+}
+
+
+table {
+    margin: auto;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #cecece;
+    font-weight: bold;
+}
+
+.slikaInfo {
+    width: 90%;
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,42 @@
+.naslov {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.slika {
+    margin: auto;
+    display: block;
+}
+
+.kontrole {
+    margin: auto;
+}
+
+.kalkulator {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    height: 60px;
+    width: 300px;
+    font-size: 24px;
+}
+
+.bmi {
+    text-align: center;
+    margin: 10px;
+    font-size: 24px;
+}
+
+.informacijeDugme {
+    font-size: 14px;
+    font-weight: 700;
+    color: #142041;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+}
