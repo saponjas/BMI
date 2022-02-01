@@ -1,6 +1,7 @@
 import React from "react";
 import "./Informacije.css";
 import lista from "./bmiLista";
+import KategorijaItem from "./KategorijaItem";
 
 function Informacije() {
   return (
@@ -21,11 +22,7 @@ function Informacije() {
           <td>Rizik</td>
         </tr>
         {lista.map((item) => (
-          <tr>
-            <td>{item.bmi}</td>
-            <td>{item.opis}</td>
-            <td>{item.rizik}</td>
-          </tr>
+          <KategorijaItem item={item} />
         ))}
       </table>
 

@@ -7,19 +7,20 @@ function Kalkulator() {
   const [tezina, setTezina] = useState("");
   const [visina, setVisina] = useState("");
   const [bmi, setBmi] = useState("");
-
   const history = useHistory()
 
   const izracunajBMI = (tezina, visina) => {
-    setBmi((Number.parseInt(tezina) * 1000) / (Number.parseInt(visina) * Number.parseInt(visina)));
+    const v = Number.parseInt(visina) / 100;
+    const v1 = v * v;
+    setBmi((Number.parseInt(tezina) / v1).toFixed(2));
   };
 
   return (
     <div className="kalkulator">
       <div className="naslov">BMI Kalkulator</div>
       <img className="slika" src="https://www.health-total.com/wp-content/uploads/2019/10/bmi-chart-img.jpg" />
-      <InputPolje placeholder="Tezina" value={visina} setValue={setVisina} label="Telesna tezina" />
-      <InputPolje placeholder="Visina" value={tezina} setValue={setTezina} label="Visina" />
+      <InputPolje placeholder="Tezina" value={tezina} setValue={setTezina} label="Telesna tezina" />
+      <InputPolje placeholder="Visina" value={visina} setValue={setVisina} label="Visina" />
 
       <div className="kontrole">
         {!bmi && <button onClick={() => izracunajBMI(tezina, visina)}>Izracunaj BMI</button>}
